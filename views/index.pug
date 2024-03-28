@@ -1,0 +1,17 @@
+html
+  head 
+    link(rel='stylesheet', href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css')
+  body
+    table.table.table-striped
+      tr
+        th Ник
+        th Email
+        th Зарегистрирован
+        th Статус
+
+      each row in rows
+        tr
+          td= row.Ник
+          td= row.email
+          td= row.Зарегистрирован
+          td= row.Статус
